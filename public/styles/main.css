@@ -11,3 +11,11 @@ path:hover {
 body {
     overflow-y: hidden;
 }
+
+@media screen and (min-width: 768px) {
+    #city {
+        position: absolute;
+        bottom:15rem;
+        right:15rem;
+    }
+}
