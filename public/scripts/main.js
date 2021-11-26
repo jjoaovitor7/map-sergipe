@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
       "Nossa Senhora da Aparecida",
       "Pedra Mole",
       "Pinhão",
-      "Ribeiropolis",
+      "Ribeirópolis",
       "São Miguel do Aleixo",
       "Simão Dias",
       "Monte Alegre de Sergipe",
