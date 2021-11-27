@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
       "Santana do São Francisco",
     ];
 
-    let paths = document.querySelectorAll("path");
+    let paths = document.querySelectorAll("#map path");
     paths.forEach((path, idx) => {
         path.addEventListener("mouseover", function() {
             document.getElementById("city").innerHTML = cidades[idx];

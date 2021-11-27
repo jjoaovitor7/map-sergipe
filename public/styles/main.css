@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-path:hover {
+#map path:hover {
     fill: #a9a9a9 !important;
 }
 
@@ -12,10 +12,22 @@ body {
     overflow-y: hidden;
 }
 
+#map {
+    margin-top: 5vh;
+    width: 100vw;
+    height: 65vh;
+}
+
 @media screen and (min-width: 768px) {
     #city {
         position: absolute;
         bottom:15rem;
         right:15rem;
+    }
+
+    #map {
+        margin-top: 0;
+        width: initial;
+        height: initial;
     }
 }
