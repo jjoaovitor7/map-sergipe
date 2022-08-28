@@ -1,5 +1,6 @@
-document.addEventListener("DOMContentLoaded", function (e) {
-    let cidades = [
+document.addEventListener("readystatechange", (e) => {
+  if (document.readyState == "complete") {
+    const cidades = [
       "Tobias Barreto",
       "Poço Verde",
       "Arauá",
@@ -47,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
       "Carmópolis",
       "Cumbe",
       "Divina Pastora",
-      "Gereral Maynard",
+      "General Maynard",
       "Japaratuba",
       "Japoatã",
       "Malhada dos Bois",
@@ -67,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
       "Itabi",
       "Nossa Senhora de Lourdes",
       "Porto da Folha",
-      "Própria",
+      "Propriá",
       "Telha",
       "Brejo Grande",
       "Ilha das Flores",
@@ -77,14 +78,20 @@ document.addEventListener("DOMContentLoaded", function (e) {
       "Santana do São Francisco",
     ];
 
-    let paths = document.querySelectorAll("#map path");
+    const map_obj = document.getElementById("map_obj");
+    const svg = map_obj.getSVGDocument();
+    const paths = svg.querySelectorAll("path");
+
     paths.forEach((path, idx) => {
-        path.addEventListener("mouseover", function() {
-            document.getElementById("city").innerHTML = cidades[idx];
-        });
-	
-	path.addEventListener("mouseleave", function() {
-            document.getElementById("city").innerHTML = "";
-        });
+      path.addEventListener("mouseover", (e) => {
+        e.target.style.fill = "#A9A9A9";
+        document.getElementById("city").innerHTML = cidades[idx];
+      });
+
+      path.addEventListener("mouseleave", (e) => {
+        e.target.style.fill = "#00923F";
+        document.getElementById("city").innerHTML = "";
+      });
     });
-  });
+  }
+});

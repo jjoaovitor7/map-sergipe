@@ -1,2 +1,2 @@
-# map_sergipe
+# map-sergipe
 Mapa de Sergipe.
