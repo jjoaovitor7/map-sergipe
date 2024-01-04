@@ -84,12 +84,12 @@ document.addEventListener("readystatechange", (e) => {
 
     paths.forEach((path, idx) => {
       path.addEventListener("mouseover", (e) => {
-        e.target.style.fill = "#A9A9A9";
+        e.target.style.fill = "#a9a9a9";
         document.getElementById("city").innerHTML = cidades[idx];
       });
 
       path.addEventListener("mouseleave", (e) => {
-        e.target.style.fill = "#00923F";
+        e.target.style.fill = "#00923f";
         document.getElementById("city").innerHTML = "";
       });
     });

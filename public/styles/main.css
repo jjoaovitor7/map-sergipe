@@ -8,9 +8,19 @@ body {
     overflow-y: hidden;
 }
 
+.page {
+    min-height: 100vh;
+}
+
 #city {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+    #map_obj {
+        margin-top: -4vh;
+        scale: .98;
+    }
 }
