@@ -9,7 +9,7 @@ body {
 }
 
 .page {
-    min-height: 100vh;
+    min-height: 80vh;
 }
 
 #city {
@@ -18,9 +18,14 @@ body {
     align-items: center;
 }
 
+#map_obj  {
+    max-width: 100%;
+}
+
 @media screen and (min-width: 768px) {
     #map_obj {
         margin-top: -4vh;
-        scale: .98;
+        -webkit-transform: scale(.98);
+        transform: scale(.98);
     }
 }
